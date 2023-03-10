@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crude Operation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <center>
+        <table>
+            <!-- <form oninput="result.value = age.value" onsubmit="event.preventDefault();" return numberValidation()"
+                name="myform"> -->
+            <!-- <form onsubmit="event.preventDefault();"> -->
+            <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="">
+                <tr>
+                    <td>
+                        <label for="name">Name :</label>
+                    </td>
+                    <td>
+                        <input type="text" name="name" id="name" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email :</label>
+                    </td>
+                    <td>
+                        <input type="email" name="email" id="email" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="num">Phone Number :</label>
+                    </td>
+                    <td>
+                        <input type="tel" maxlength="10" name="ph_number" id="num" value="" required>
+                        <span id="num_message" style="color: red;"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="bday">Birthdate :</label>
+                    </td>
+                    <td>
+                        <input type="date" name="bday" id="bday" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="a_time">Appointment time :</label>
+                    </td>
+                    <td>
+                        <input type="time" name="a_time" id="a_time" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="fav_color">Favorite color:</label>
+                    </td>
+                    <td>
+                        <input type="color" name="fav_color" id="fav_color">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="payment">Payment method:</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="payment_method" id="payment"> Credit Card
+                        <br>
+                        <input type="radio" name="payment_method" id="payment">PayPal
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="age">Age :</label>
+                    </td>
+                    <td> <output name="result" for="age">18</output>
+                        <input type="range" name="age" min="1" max="100" id="age" step="1" value="108" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+                        <label for="checkbox-options">Which Type of Medicine you prefer:</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="option1" name="option1" value="option1">
+                        <label for="option1">Capsule</label> <br>
+                        <input type="checkbox" id="option1" name="option1" value="option1">
+                        <label for="option2">Tablets</label><br>
+                        <input type="checkbox" id="option1" name="option1" value="option1">
+                        <label for="option3">Syrup</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="photo">Upload Your Photo :</label>
+                    </td>
+                    <td>
+                        <input type="file" name="photo" id="photo" accept="image/*" required>
+                    </td>
+                </tr>
+                <tr>
+                    <!-- <td>
+                        <label for="submit">Submit :</label>
+                    </td> -->
+                    <td>
+                        <input type="submit" name="submit" id="submit" onclick="myForm()" style="float: right;">
+                    </td>
+                </tr>
+            </form>
+            <!-- skjdgvsudgfbwieoufgweio? -->
+            <tr>
+                <td>
+                    <table class="list" id="clientlist">
+                        <thead>
+                            <tr style="background-color: black;">
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Phone Number</th>
+                                <th>Birthdate</th>
+                                <th>Appointment time </th>
+                                <th>Favorite color</th>
+                                <th>Payment method</th>
+                                <th>Age </th>
+                                <th>Which Type of Medicine you prefer</th>
+                                <th>Upload Your Photo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+
+                        </tbody>
+
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </center>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
