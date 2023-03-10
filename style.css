@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url("images/CSS-Animated-Backgrounds-2.gif");
+  /* background-image: url(images/bg3.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgba(255, 255, 255, 0.888);
+}
+
+table {
+  padding-left: 25px;
+  /* width: 900px; */
+  height: 450px;
+  margin-top: 15vh;
+  background-color: rgba(255, 255, 255, 0.24);
+  border: 5px solid black;
+  border-radius: 30px;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: underline;
+  color: blue;
+}
