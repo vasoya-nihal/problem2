@@ -15,13 +15,15 @@
             <!-- <form oninput="result.value = age.value" onsubmit="event.preventDefault();" return numberValidation()"
                 name="myform"> -->
             <!-- <form onsubmit="event.preventDefault();"> -->
-            <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="">
+            <form onsubmit="event.preventDefault();onFormSubmit();numberValidation();" autocomplete="">
                 <tr>
                     <td>
                         <label for="name">Name :</label>
                     </td>
                     <td>
-                        <input type="text" name="name" id="name" required>
+                        <input type="text" name="name_text" id="name" required>
+                        <span id="name_message" style="color: red;"></span>
+
                     </td>
                 </tr>
                 <tr>
