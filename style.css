@@ -11,10 +11,10 @@ body {
 }
 
 table {
-  padding-left: 25px;
+  padding-left: 2px;
   /* width: 900px; */
-  height: 450px;
-  margin-top: 15vh;
+  /* height: 450px; */
+  margin-top: 10vh;
   background-color: rgba(255, 255, 255, 0.24);
   border: 5px solid black;
   border-radius: 30px;
@@ -24,4 +24,13 @@ a {
   cursor: pointer;
   text-decoration: underline;
   color: blue;
+}
+#submit {
+  float: right;
+  width: 120px;
+  margin-right: -25%;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.503);
+  color: white;
+  border-radius: 20px;
 }
