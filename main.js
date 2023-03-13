@@ -1,5 +1,10 @@
 function numberValidation(){
     var a = document.getElementById("num").value;
+    var b = document.getElementById("name").value;  
+        if(!isNaN(b)){
+            document.getElementById("name_message").innerHTML="**  Please Enter Only AlfabetValue";
+            return false;
+        }
     if(a==""){
         document.getElementById("num_message").innerHTML="** Please fill Mobile Number";
         return false;
@@ -12,7 +17,7 @@ function numberValidation(){
         document.getElementById("num_message").innerHTML="** Mobile Number must be 10 digit";
         return false;
     }
-    if(a.length<10){
+    if(a.length>10){
         document.getElementById("num_message").innerHTML="** Mobile Number must be 10 digit";
         return false;
     }
@@ -22,6 +27,13 @@ function numberValidation(){
     }
 }
 
+// function nameValidation(){
+//     var b = document.getElementById("name").value;
+//     if(!isNaN(b)){
+//         document.getElementById("name_message").innerHTML="**  Please Enter Only AlfabetValue";
+//         return false;
+//     }
+// }
 
 // shdvfsiudfyisudg
 var selectedRow = null
